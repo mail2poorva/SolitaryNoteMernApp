@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.error404 {
+  padding-top: 100px;
+}
+
+.error404-img {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.error404-btn {
+  padding: 15px 20px !important;
+  color: #fff !important;
+  background-color: #008774 !important;
+  border-radius: 3px !important;
+}
+
+.error404 .link {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+}
+
+.error404 span {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+.error404 .link:hover span {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=Error404.css.map */

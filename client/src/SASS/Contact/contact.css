@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.contact {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 5rem;
+  height: 125vh;
+  background-image: url(../../images/contactbg.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-firsthalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10%;
+  height: 50%;
+  padding-bottom: 100px;
+}
+
+.contact-firsthalf-1 {
+  width: 45%;
+  margin-top: -5%;
+}
+
+.contact-firsthalf-1 h3 {
+  font-size: 30%;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+.contact-firsthalf-1 h1 {
+  color: #068472;
+  font-weight: 700;
+  font-size: 55%;
+}
+
+.contact-firsthalf-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55%;
+  height: 165%;
+  border-radius: 8px;
+  padding-top: 50px;
+  background-color: #fbfbfb;
+  border: 2px solid #e5f9f6;
+}
+
+.contact-firsthalf-2 .part {
+  width: 70%;
+  height: 85%;
+}
+
+.contact-firsthalf-2 .part h2 {
+  margin-left: -30px;
+  font-weight: 500;
+  font-size: 40%;
+  color: #068472;
+  margin-bottom: 5%;
+}
+
+.contact-firsthalf-2 .part-form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-firsthalf-2 .part-form #submit {
+  background-color: #008774;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 10px 20px;
+}
+
+.contact-firsthalf-2 .part-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  padding-left: 0;
+}
+
+.contact-firsthalf-2 .part-small #input {
+  outline: none;
+  font-size: 22%;
+  padding: 2%;
+  border: none;
+  border-bottom: 1.5px solid black;
+  background: #0000;
+  font-weight: 600;
+}
+
+.contact-firsthalf-2 .part-small textarea {
+  height: 50px;
+}
+
+.contact-firsthalf-2 .part-small label {
+  font-size: 18%;
+}
+
+.contact-secondhalf {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10.5%;
+}
+
+.contact-secondhalf-part {
+  width: 15%;
+  background-color: #fff;
+  padding: 20px 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  border: 2px solid rgba(0, 142, 122, 0.5);
+  border-radius: 6px;
+}
+
+.contact-secondhalf-part h1 {
+  font-size: 20%;
+  font-weight: 500;
+  color: #b3b3b3;
+}
+
+.contact-secondhalf-part p {
+  font-weight: 300;
+  margin-top: 7px;
+  font-size: 17%;
+}
+
+@media (max-width: 1300px) {
+  .contact-secondhalf-part {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contact {
+    font-size: 4rem;
+  }
+  .contact-firsthalf {
+    width: 80%;
+  }
+  .contact-firsthalf-1 {
+    margin-top: 2%;
+  }
+  .contact-firsthalf-2 .part {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  .contact-secondhalf-part {
+    width: 25%;
+  }
+}
+
+@media (max-width: 730px) {
+  .contact-firsthalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 250px;
+    gap: 30px;
+  }
+  .contact-firsthalf-1 {
+    text-align: center;
+  }
+  .contact-firsthalf-2 {
+    width: 80%;
+  }
+  .contact-firsthalf-2 .part {
+    width: 100%;
+  }
+  .contact-firsthalf-2 .part h2 {
+    text-align: center;
+  }
+  .contact-secondhalf {
+    margin-top: 100px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+  }
+  .contact-secondhalf-part {
+    width: 43%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

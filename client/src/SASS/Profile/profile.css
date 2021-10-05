@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.profile {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-size: 5rem;
+  gap: 3%;
+}
+
+.profile-part-1 {
+  width: 20%;
+  height: 70%;
+}
+
+.profile-part-1 .box1 {
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  height: 90%;
+  background-color: #d6f3ef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-part-1 .box1-img {
+  background-image: url("../../images/person.jpg");
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.profile-part-1 .box1-img .changeimg {
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-part-1 .box1-img .changeimg button {
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.profile-part-1 .box1-img .changeimg button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.profile-part-1 .box1 h1 {
+  font-size: 30%;
+  font-weight: 500;
+}
+
+.profile-part-1 .box1 h3 {
+  font-size: 20%;
+  font-weight: 300;
+}
+
+.profile-part-1 .editbtn {
+  background-color: #008774;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.profile-part-1 .editbtn:hover {
+  background-color: #008774;
+}
+
+.profile-part-2 {
+  width: 55%;
+  height: 100%;
+}
+
+.profile-part-2 .part {
+  border-radius: 5px;
+  width: 100%;
+  height: 90%;
+  background: #d6f3ef;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.profile-part-2 .part-heading {
+  font-size: 40%;
+  color: #008774;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.profile-part-2 .part-details {
+  margin: 50px auto;
+  height: 60%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.profile-part-2 .part-details-item {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 20%;
+  font-weight: 200;
+}
+
+.profile-part-2 .part-details-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.profile-part-2 .part-details-item div p {
+  padding: 10px 20px;
+  background-color: #bceee7;
+}
+
+.profile-part-2 .part-details-item span {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 400;
+}
+
+.profile-part-2 .part-details-item span p {
+  padding: 10px 10px;
+  background-color: #bceee7;
+}
+
+@media (max-width: 1260px) {
+  .profile {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .profile {
+    font-size: 4rem;
+  }
+  .profile-part-1 {
+    width: 25%;
+  }
+  .profile-part-2 {
+    width: 67%;
+  }
+  .profile-part-2 .part-details {
+    width: 100%;
+  }
+  .profile-part-2 .part-details-item div {
+    width: 40%;
+  }
+  .profile-part-2 .part-details-item span {
+    width: 60%;
+  }
+}
+
+@media (max-width: 620px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+    font-size: 3rem;
+  }
+  .profile-part-1 {
+    width: 85%;
+    height: auto;
+    padding: 50px 0;
+  }
+  .profile-part-1 .box1 {
+    padding: 30px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile-part-1 .box1-img {
+    width: 20%;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+  .profile-part-2 {
+    width: 85%;
+  }
+  .profile-part-2 .part-details-item {
+    font-size: 18%;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

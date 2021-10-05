@@ -1,0 +1,280 @@
+//  100 200 300 400 500 600 700 800 900
+$color-lightblue: #b9ede6;
+$color-darkblue: #008774;
+$white: #fff;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.homepage {
+  width: 100%;
+  margin-top: -70px;
+  height: 100vh;
+  background-image: url(../../images/home-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 5rem;
+  gap: 7%;
+  &-h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 45%;
+    width: 30%;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  &-fieldset {
+    width: 40%;
+    height: 30%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    legend {
+      color: white;
+      font-weight: 300;
+      margin-left: 20px;
+      font-size: 30%;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 40px;
+      background-color: #008774;
+      transition: all 0.3s;
+      z-index: 1;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($color-darkblue, 2px);
+      }
+    }
+  }
+}
+
+.form {
+  height: 50vh;
+  width: 45%;
+  margin: 70px auto;
+  border: 3px solid transparent;
+  border-image-source: linear-gradient(
+    135deg,
+    $color-darkblue,
+    $color-lightblue
+  );
+
+  border-image-slice: 1;
+  legend {
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+  }
+
+  &-main {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 90%;
+    .label-box {
+      //   align-items: center;
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 20%;
+    }
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 20%;
+      justify-content: flex-start;
+      &-item {
+        border: none;
+        border-bottom: 2px solid black;
+        padding: 10px;
+        outline: none;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+
+      &-text {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 3px;
+      }
+    }
+    .btn {
+      margin: auto;
+      background-color: #008774;
+      padding: 10px 40px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: darken(#008774, 3px);
+      }
+    }
+  }
+}
+
+.note-grid {
+  margin: 70px auto;
+  width: 85%;
+  columns: 3;
+  column-gap: 40px;
+
+  &-item {
+    font-size: 4rem;
+    order: 1;
+    margin-bottom: 20px;
+    background: linear-gradient(
+      209.57deg,
+      rgba(92, 218, 199, 0.65) 1.8%,
+      rgba(152, 216, 207, 0.208) 105.62%
+    );
+    width: 100%;
+    overflow: hidden;
+    break-inside: avoid;
+    padding: 30px 50px;
+    padding-top: 40px;
+    border-radius: 6px;
+
+    .date {
+      margin-top: -20px;
+      float: right;
+      font-size: 20%;
+      color: #708a86;
+    }
+
+    .title {
+      color: #4c9b91;
+      text-transform: capitalize;
+      font-size: 40%;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    .description {
+      margin-top: 1.3rem;
+      line-height: 1.2rem;
+      color: #708a86;
+      font-size: 21.5%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .homepage {
+    font-size: 4rem;
+    margin-top: -70px;
+    &-h1 {
+      width: 35%;
+      font-size: 1.65rem;
+    }
+    &-fieldset {
+      width: 55%;
+      button {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .form {
+    width: 70%;
+    height: 55vh;
+    &-main {
+      width: 95%;
+      .label-box {
+        width: 40%;
+        label {
+          font-size: 0.8rem;
+        }
+      }
+
+      .input-box {
+        width: 60%;
+      }
+    }
+  }
+
+  .note-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    margin-top: -150px;
+    font-size: 2.8rem;
+
+    &-h1 {
+      width: 44%;
+    }
+
+    &-fieldset {
+      button {
+        padding: 10px 25px;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .form {
+    width: 89%;
+
+    legend {
+      font-size: 1rem;
+    }
+
+    &-main {
+      width: 95%;
+
+      .btn {
+        padding: 8px 30px;
+        font-size: 0.8rem;
+      }
+
+      .label-box {
+        width: 40%;
+        label {
+          font-size: 0.8rem;
+        }
+      }
+
+      .input-box {
+        width: 60%;
+      }
+    }
+
+    &-fieldset {
+      width: 60%;
+      button {
+        font-size: 12px;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .note-grid {
+    columns: 1;
+  }
+}

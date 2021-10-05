@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.error404 {
+  padding-top: 100px;
+
+  &-img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+
+  &-btn {
+    padding: 15px 20px !important;
+    color: #fff !important;
+    background-color: #008774 !important;
+    border-radius: 3px !important;
+  }
+  .link {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: white;
+  }
+
+  span {
+    transition: margin-left 0.5s;
+  }
+
+  .link:hover span {
+    margin-left: 10px;
+  }
+}
